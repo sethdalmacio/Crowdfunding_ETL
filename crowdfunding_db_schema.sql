@@ -17,7 +17,7 @@ CREATE TABLE contacts (
 );
 
 CREATE TABLE campaign (
-    cf_id SERIAL PRIMARY KEY,
+    cf_id INT PRIMARY KEY,
     contact_id INT REFERENCES contacts(contact_id),
     company_name VARCHAR(300) NOT NULL,
     description TEXT,
